@@ -1,6 +1,6 @@
 {
   "name": "paper-vertical-tabs",
-  "private": true,
+  "version": "0.0.1",
   "dependencies": {
     "core-icons": "Polymer/core-icons#master",
     "core-selector": "Polymer/core-selector#master",
