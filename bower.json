@@ -4,6 +4,6 @@
   "keywords": ["web-components"],
   "dependencies": {
     "core-selector": "Polymer/core-selector",
-    "paper-tabs": "Polymer/paper-tabs",
+    "paper-tabs": "Polymer/paper-tabs"
   }
 }
