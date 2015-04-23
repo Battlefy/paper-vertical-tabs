@@ -30,7 +30,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   position: absolute;
   width: 2px;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 0;
   background-color: #ffff8d;
   transition: width, top;

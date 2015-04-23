@@ -3,11 +3,7 @@
   "private": true,
   "keywords": ["web-components"],
   "dependencies": {
-    "core-icons": "Polymer/core-icons#master",
-    "core-selector": "Polymer/core-selector#master",
-    "core-toolbar": "Polymer/core-toolbar#master",
-    "font-roboto": "Polymer/font-roboto#master",
-    "paper-icon-button": "Polymer/paper-icon-button#master",
-    "paper-ripple": "Polymer/paper-ripple#master"
+    "core-selector": "Polymer/core-selector",
+    "paper-tabs": "Polymer/paper-tabs"
   }
 }
