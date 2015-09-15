@@ -1,0 +1,22 @@
+{
+  "name": "paper-vertical-tabs",
+  "version": "1.0.0",
+  "description": "Polymer component for vertical tabs in material design",
+  "contributors": [{
+    "name": "Aleksandr Zhukov",
+    "email": "aleksandr.a.zhukov@gmail.com"
+  }],
+  "scripts": {
+    "start": "./node_modules/polyserve/bin/polyserve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Battlefy/paper-vertical-tabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Battlefy/paper-vertical-tabs/issues"
+  },
+  "devDependencies": {
+    "polyserve": "^0.4.0"
+  }
+}
