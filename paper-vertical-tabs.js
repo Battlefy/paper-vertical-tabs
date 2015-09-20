@@ -1,39 +1,40 @@
-Polymer('paper-vertical-tabs', {
-  noink: false,
-  nobar: false,
+Polymer({
+  noBar: false,
+  barPosition: 'left',
+  barWidth: 2,
+  barColor: '#2196f3',
   activateEvent: 'down',
-  nostretch: false,
+  noStretch: false,
+
   selectedIndexChanged: function(old) {
-    var s = this.$.selectionBar.style;
+    var barStyle = this.$.selectionBar.style;
+    var contentStyle = this.$.tabsContainer.style;
+
+    barStyle.backgroundColor = this.barColor;
+    barStyle.width = this.barWidth + 'px';
 
     if (!this.selectedItem) {
-      s.height = 0;
-      s.top = 0;
+      barStyle.height = 0;
+      barStyle.top = 0;
       return;
     }
 
-    var h = 100 / this.items.length;
-    s.height = h + '%';
-    s.width = 10 + 'px';
+    var barHeight = 100 / this.items.length;
+    barStyle.height = barHeight + '%';
+    if (this.barPosition === 'right') {
+      barStyle.left = 'inherit';
+      barStyle.right = 0;
+      contentStyle.marginRight = this.barWidth + 'px';
+    }
+    else contentStyle.marginLeft = this.barWidth + 'px';
 
-    s.top = h * this.selectedIndex + '%';
+    barStyle.top = barHeight * this.selectedIndex + '%';
 
-    if (this.nostretch || old === null || old === -1) {
+    if (this.noStretch || old === null || old === -1) {
       return;
     }
 
     this.$.selectionBar.classList.add('expand');
-  },
-
-  barTransitionEnd: function() {
-    var cl = this.$.selectionBar.classList;
-    if (cl.contains('expand')) {
-      cl.remove('expand');
-      cl.add('contract');
-      var s = this.$.selectionBar.style;
-    } else if (cl.contains('contract')) {
-      cl.remove('contract');
-    }
   }
 
 });

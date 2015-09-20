@@ -1,4 +1,6 @@
-paper-tabs
+paper-vertical-tabs
 ============
 
-See the [component page](http://www.polymer-project.org/docs/elements/paper-elements.html#paper-tabs) for more information.
+You can see demo:
+- npm start
+- open http://localhost:8080/components/paper-vertical-tabs/demo.html

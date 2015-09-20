@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <script src='./bower_components/webcomponentsjs/webcomponents.js'></script>
+  <script src='./bower_components/paper-tabs/paper-tab.html'></script>
+  <link rel='import' href='paper-vertical-tabs.html'>
+  <title></title>
+  <style>
+    paper-vertical-tabs {
+      width: 200px;
+    }
+
+    paper-tab::shadow #ink {
+      color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <h4>Vertical tabs without bar</h4>
+  <paper-vertical-tabs selected="0" noBar="true">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs with left bar</h4>
+  <paper-vertical-tabs selected="0">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs with right bar</h4>
+  <paper-vertical-tabs selected="0" barPosition="right">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs with red bar</h4>
+  <paper-vertical-tabs selected="0" barColor="red">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs with wide bar</h4>
+  <paper-vertical-tabs selected="0" barWidth="25">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs with animation on keyup</h4>
+  <paper-vertical-tabs selected="0" activateEvent="up">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+  <h4>Vertical tabs without animation</h4>
+  <paper-vertical-tabs selected="0" noStretch="true">
+    <paper-tab none>Paper tab 1</paper-tab>
+    <paper-tab none>Paper tab 2</paper-tab>
+    <paper-tab none>Paper tab 3</paper-tab>
+  </paper-vertical-tabs>
+
+</body>
+</html>
